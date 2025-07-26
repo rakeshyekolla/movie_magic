@@ -15,7 +15,7 @@ app.secret_key = 'fallback_dev_key'
 
 # ------------------- AWS DynamoDB + SNS Setup ------------------- #
 AWS_REGION = 'us-east-1'
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:604665149129:fixitnow_Topic'
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:194722438347:movie_magic_topic'
 
 dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION)
 sns = boto3.client('sns', region_name=AWS_REGION)
